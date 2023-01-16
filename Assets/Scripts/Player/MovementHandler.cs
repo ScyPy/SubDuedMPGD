@@ -10,18 +10,21 @@ public class MovementHandler : MonoBehaviour
 
     private float _mouseSensitivity = 25f;
     private float _speed = 5f;
-    private const float _gravity = -9.81f;
+    private const float _gravity = -18f; //stronger custom gravity
     private float _velocity;
     private float _pitch;
     private float _yaw;
     private float _xRot = 0f;
     private const float _rotationSpeed = 60f;
-    
+    private const float _jumpHeight = 0.8f;
+
+
     void Start()
     {
         _inputManager = GetComponent<InputManager>();
         _characterController = GetComponent<CharacterController>();
         _mainCamera = Camera.main;
+        _inputManager.HasJumped += Jump;
     }
 
     // Update is called once per frame
@@ -58,16 +61,32 @@ public class MovementHandler : MonoBehaviour
 
     private void Gravity()
     {
+        //stop velocity from infinitely dropping
         if (_characterController.isGrounded && _velocity < 0)
         {
             _velocity = -2f;
         }
 
         _velocity += _gravity * Time.deltaTime;
+
+        //if (_inputManager.Jump && _characterController.isGrounded)
+        //{
+        //    _velocity = Mathf.Sqrt(-2f * _jumpHeight * _gravity);
+        //}
+        //_inputManager.Jump = false;
     }
     private void MovePlayer()
     {
+        //move in transform forward direction
         Vector3 moveDir = (_inputManager.MoveDirection.y * transform.forward) + (_inputManager.MoveDirection.x * transform.right);
         _characterController.Move(moveDir * _speed * Time.deltaTime + new Vector3(0f, _velocity,0f) * Time.deltaTime);
+    }
+
+    private void Jump()
+    {
+        if (!_characterController.isGrounded) return;
+
+        _velocity = Mathf.Sqrt(-2f * _jumpHeight * _gravity);
+
     }
 }

@@ -8,8 +8,12 @@ public class InputManager : MonoBehaviour
 {
     public Vector2 MouseLook { get; private set; }
     public Vector2 MoveDirection { get; private set; }
-    public bool Jump { get; private set; }
+    public bool Jump { get; set; }
     public bool Attack { get; private set; }
+
+    public Action HasAttacked;
+
+    public Action HasJumped;
 
     [SerializeField]
     private PlayerActions _playerActions;
@@ -58,9 +62,15 @@ public class InputManager : MonoBehaviour
     private void OnJump(InputAction.CallbackContext jumpValue)
     {
         Jump = jumpValue.ReadValueAsButton();
+        if (Jump)
+            HasJumped?.Invoke();
+        Jump = false;
     }
     private void OnAttack(InputAction.CallbackContext ctx)
     {
         Attack = ctx.ReadValueAsButton();
+        if (Attack)
+            HasAttacked?.Invoke();
+
     }
 }
