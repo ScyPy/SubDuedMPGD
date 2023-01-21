@@ -2,6 +2,7 @@
 Subdued is a survival zombie horror WebGL Game.
 # Objective:
 Survive!
+- Use your gold, weapons and environment to your advantage and hold off the zombie hordes.
 
 # Default Controls:
 - W,A,S,D - Move.
