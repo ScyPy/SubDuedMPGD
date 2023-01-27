@@ -36,6 +36,38 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "771b6d8e-3bb0-4885-8bfa-bbbeb78b6d7d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Hotkey1",
+                    "type": "Button",
+                    "id": "5c6677d8-918f-41a8-84b6-57c6896ddc68",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Hotkey2",
+                    "type": "Button",
+                    "id": "854eefed-c06c-48bf-91a0-e2764c925879",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Hotkey3",
+                    "type": "Button",
+                    "id": "af08ac28-f1d7-457b-8f98-1035ccdddbe1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -124,6 +156,96 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7002f3d4-50de-4c7e-868c-7cdf97faee87",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fda5ee3c-4bc2-4aa2-96dd-ae3197ffb08e",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hotkey1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "77371ee4-3d45-4700-8a5d-dec7c0aac7fb",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hotkey2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "55ff43c7-0b20-4c73-aecf-da1a29556f4e",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hotkey3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "CheatMenu",
+            "id": "dde735cb-1592-4531-a3c6-1c32607ef94c",
+            "actions": [
+                {
+                    "name": "RegisterCheat",
+                    "type": "Button",
+                    "id": "46cbd701-2f5a-40b4-9757-2074c3274f6b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "CheatKey",
+                    "type": "Button",
+                    "id": "a8af6d49-4d91-4209-9409-ca7f47135f58",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "73fd0897-d50a-4aa2-970a-f98b6bfca9cd",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RegisterCheat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc4c436a-b9e2-4449-a9b8-e964fc85611d",
+                    "path": "<Keyboard>/slash",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CheatKey",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

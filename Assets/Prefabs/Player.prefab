@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 988840128}
   - component: {fileID: 988840132}
   - component: {fileID: 988840133}
+  - component: {fileID: 239848543}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -82,7 +83,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5563006348098744633}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -174,3 +175,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputManager: {fileID: 0}
   _mainCamera: {fileID: 0}
+--- !u!114 &239848543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563006348098744633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f406e2183782dd4198ce1c8da03eddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
