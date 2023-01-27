@@ -25,3 +25,5 @@ Assets Used:
 - Low-Poly Simple Nature Pack - https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153
 - FREE Casual Food Pack- Mobile/VR - https://assetstore.unity.com/packages/3d/props/food/free-casual-food-pack-mobile-vr-85884
 - Weapons of Choice - FREE - https://assetstore.unity.com/packages/audio/sound-fx/weapons/weapons-of-choice-free-101807
+- Low Poly Barriers Pack Free - https://assetstore.unity.com/packages/3d/props/exterior/low-poly-barriers-pack-free-201810
+- Low Poly Street Pack - https://assetstore.unity.com/packages/3d/environments/urban/low-poly-street-pack-67475
